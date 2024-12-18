@@ -1,0 +1,6 @@
+@import url("https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css");
+
+.image-margin {
+  margin-bottom: 2rem; /* 또는 원하는 크기 */
+  border-radius: 8px;
+}
