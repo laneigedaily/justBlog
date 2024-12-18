@@ -15,8 +15,8 @@ export default function BlogPost({ data, children }: IBlogPostDetail) {
   );
   return (
     <Layout title="BlogPost">
-      <GatsbyImage image={image as any} alt={data.mdx?.frontmatter?.title} />
-      <div>{children}</div>
+      {/* <GatsbyImage image={image as any} alt={data.mdx?.frontmatter?.title} /> */}
+      <div className="main-margin">{children}</div>
     </Layout>
   );
 }

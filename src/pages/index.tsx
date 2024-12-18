@@ -7,7 +7,7 @@ import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 export default function Index({ data }: PageProps<Queries.MainQueryQuery>) {
   return (
     <Layout title="Useful Homepage For Developer">
-      <div className="grid">
+      <div className="grid" style={{ gridTemplateColumns: "repeat(4, auto)" }}>
         {data.allContentfulBlog.nodes.map((sticker) => (
           <article>
             <GatsbyImage

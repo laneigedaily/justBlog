@@ -1,12 +1,39 @@
 ---
-title: FontAwesome
-category: personal
+title: GitHub
+category: Personal
 date: "2024-12-17"
 author: DOWN
 slug: hello-hello
 mainImage: fontawesome.png
 ---
 
-# FontAwesome
+# Github Commit Sequence
 
-Font Awesome is the Internet's icon library and toolkit
+`````bash
+
+## 1. 프로젝트 Build
+
+````bash
+
+npm run build
+
+## 2. GitHub Repository 준비
+
+```bash
+
+git init
+git remote add origin https://github.com/<username>/<repository-name>.git
+
+## 3. Build 파일을 Commit 및 Push
+
+```bash
+
+git checkout -b gh-pages
+git add build/
+git commit -m "Deploy React app"
+
+```bash
+
+git subtree push --prefix build origin gh-pages
+
+`````
