@@ -18,7 +18,7 @@ const config: GatsbyConfig = {
       options: {
         spaceId: `ci7tnxroh331`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-plugin-mdx`,
